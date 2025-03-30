@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+tensorflow
+=======
+tensorflow==2.15.0
+>>>>>>> 02d4f51 (Added new files and updates)
+pandas
+numpy
+scikit-learn
+tensorboard
+matplotlib
+streamlit
