@@ -1,0 +1,32 @@
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air PYTHON % cd trydjango
+cd: no such file or directory: trydjango
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air PYTHON % cd DJANGO
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air DJANGO % cd trydjango
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air trydjango % rm -rf django
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air trydjango % rm -rf trydjango
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air trydjango % ls -ld trydjango
+ls: trydjango: No such file or directory
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air trydjango % cd ..
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air DJANGO % ls -ld trydjango
+drwxr-xr-x  2 mudassirmohammed  staff  64 Apr  5 09:56 trydjango
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air DJANGO % 
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air DJANGO % sudo rm -rf trydjango
+Password:
+(djvenv) mudassirmohammed@Mudassirs-MacBook-Air DJANGO % 
+
+
+
+python3 -m venv venv_name
+
+
+sourcee venv_name/bin/activate
+
+
+
+deactivate
+
+
+Once the running of django projects start we can't just end the application by just quitting we have to free up
+the port by finding lsof -i :8000
+and then kill -9 pid
+ 

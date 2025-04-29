@@ -1,0 +1,15 @@
+✅ Debug Mode Recap:
+	•	When Flask is in debug=True, it auto-restarts on changes ✅
+	•	If there’s a syntax or runtime error, it immediately crashes and shows you the issue ❌
+	•	You just need to fix the error and save again — Flask will auto-restart!
+
+
+
+Databases :
+
+RDBMS mysql, oracle, sql server, postgres
+DBMS mongodb , couchdb
+GRAPH DBMS Neo4j , etc.
+KEY VALUE DATA BASES -- REDIS,RIAK
+
+BLOB STORES -- Databases - BLOBS (AMAZON S3,GOOGLE CLOUD STORAGE)

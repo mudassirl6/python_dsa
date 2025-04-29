@@ -1,0 +1,50 @@
+{%extends "base.html"%}
+{% block content %}
+<h1> About </h1>
+<p> This is a template </p>
+
+<p>
+    {{ request.user.username }}
+    <br>
+    {{ request.user.email }}
+    {{ request.user.first_name }}
+    {{ request.user.last_name }}
+    {{ my_text }} <br>  {{ mynumber}}
+</p>
+
+{% for my in mylist %}  
+    {% if my == 4 %}
+        <li>{{forloop.counter}} - {{my|add:22}}</li>
+    {% elif my == 5 %}
+        <li>{{forloop.counter}} - {{my|add:22}}</li>
+    {% else %}
+        <li>{{forloop.counter}} - {{my}}</li>
+    {%endif%}
+        <li>{{forloop.counter}} - {{my}}</li>
+{% endfor %}
+
+{% if mynumber > 10 %}
+    <p> My number is greater than 10 </p>
+{% else %}
+    <p> My number is less than or equal to 10 </p>
+{% endif %}
+
+{% if request.user.is_authenticated %}
+    <p> You are logged  in </p>
+{% else %}
+    <p> You are not logged in </p>
+{% endif %}
+
+
+{% endblock %}
+
+
+{% comment %} In Django, a template engine is the component 
+responsible for rendering HTML templates by combining template
+ files with data provided by the backend.
+
+In simple terms:
+
+It lets you write HTML pages with dynamic content using 
+special syntax (template tags and filters), which Django 
+then processes to generate the final HTML sent to the browser. {% endcomment %}
