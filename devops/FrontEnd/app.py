@@ -1,4 +1,3 @@
-
 from flask import Flask,jsonify,request,render_template
 from datetime import datetime
 from dotenv import load_dotenv
@@ -28,7 +27,14 @@ def about():
 def name():
     name = request.values.get('name')
     age = request.values.get('age')
-    return jsonify({"name":name,"age":age})
+    email = request.values.get('email')
+    address = request.values.get('address')
+    return jsonify({
+        "name": name,
+        "age": age,
+        "email": email,
+        "address": address
+    })
 
 
 @app.route('/submit',methods = ['POST'])
